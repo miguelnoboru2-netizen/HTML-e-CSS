@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrícula Escolar Online</title>
+</head>
+
+<body>
+
+<h1>Matrícula Escolar Online</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label>Nome completo:</label>
+        <input type="text" name="nome" required>
+        <br><br>
+
+        <label>Data de nascimento:</label>
+        <input type="text" name="data_nascimento" placeholder="DD/MM/AAAA" required>
+        <br><br>
+
+        <label>Email do aluno:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Senha de acesso:</label>
+        <input type="password" name="senha" required>
+        <br><br>
+
+        <label>Telefone de emergência:</label>
+        <input type="tel" name="telefone" required>
+
+    </fieldset>
+
+
+    <br>
+
+
+    <fieldset>
+        <legend>Preferências de Estudo</legend>
+
+        <label>Áreas de interesse:</label>
+        <br><br>
+
+        <input type="checkbox" name="area" required>
+        Front End
+
+        <input type="checkbox" name="area">
+        Back End
+
+        <input type="checkbox" name="area">
+        Design
+
+        <input type="checkbox" name="area">
+        Dados
+
+        <br><br>
+
+        <label>Como conheceu a escola?</label>
+
+        <select required>
+            <option value="">Selecione uma opção</option>
+            <option>Instagram</option>
+            <option>Google</option>
+            <option>Indicação de amigos</option>
+            <option>Evento escolar</option>
+            <option>Outro</option>
+        </select>
+
+    </fieldset>
+
+
+    <br>
+
+
+    <button type="submit">
+        Matricular
+    </button>
+
+    <button type="reset">
+        Limpar
+    </button>
+
+
+</form>
+
+</body>
+</html>
