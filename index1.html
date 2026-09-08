@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cotação de Seguro de Veiculo</h1>
+    <br><br>
+    <form action="/seguro" method="post"> 
+        <fieldset> 
+            <legend>Condutor</legend>
+            <label for="nome">Nome do proprietario:</label>
+            <input type="text" id="nome" name="Nome do proprietario" required>
+            <br><br>
+            <label for="cnh">CNH:</label>
+            <input type="text" id="cnh" name="cnh" required>
+            <br><br>
+            <label>Data de emissão da CNH:</label>
+        <input type="text" name="cn" placeholder="DD/MM/AAAA" required>
+        <br><br>
+        Estado civil:<br><br>
+  <input type="radio" name="Estado" required> Solteiro 
+  <input type="radio" name="Estado"> Casado
+  <input type="radio" name="Estado"> Divorciado
+  <input type="radio" name="Estado"> Viuvo
+        
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Veiculo</legend>
+            <label>Placa de carro:</label>
+            <input type="text" placeholder="ABC-123">
+            <br><br>
+            <label>Marca de carro:</label>
+            <select required>
+            <option value="">Escolha um</option>
+            <option>VW</option>
+            <option>Fiat</option>
+            <option>Chevrolet</option>
+            <option>Toyota</option>
+            <option>Honda</option>
+            <option>Outro</option>
+            </select>
+            <br><br>
+            <label for="Modelo">Ano do modelo:</label>
+<input type="text" id="Modelo">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Uso</legend>
+            <label for="Taxi">Usa o carro para trablhar (Uber/taxi)?</label>
+            <br><br>
+            <input type="radio" id="Taxi"> Sim
+          <input type="radio" id="Taxi"> Não
+          <br><br>
+          <input type="checkbox"> Possui rastreador instalado
+        </fieldset>
+    </form>
+</body>
+</html>
